@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/shownumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#9A9EB8"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingTop="10pt"
+        android:text="0"
+        android:textSize="20pt" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_C"
+                style="@style/btn_default"
+                android:text="C"
+                android:onClick="clearinput"
+                />
+
+            <Button
+                android:id="@+id/btn_pn"
+                style="@style/btn_default"
+                android:text="+/-"
+                android:onClick="clickbuttonevent"
+                />
+
+            <Button
+                android:id="@+id/btn_Da"
+                style="@style/btn_default"
+                android:text="%"
+                android:onClick="percentagevent"
+                />
+
+            <Button
+                android:id="@+id/btn_ta"
+                style="@style/btn_orange"
+                android:text="/"
+                android:onClick="oprationevent"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/btn_default"
+                android:text="7"
+                android:onClick="clickbuttonevent"
+                />
+
+            <Button
+                android:id="@+id/btn_8"
+                style="@style/btn_default"
+                android:text="8"
+                android:onClick="clickbuttonevent"
+                />
+
+            <Button
+                android:id="@+id/btn_9"
+                style="@style/btn_default"
+                android:text="9"
+                android:onClick="clickbuttonevent"
+                />
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/btn_orange"
+                android:text="*"
+                android:onClick="oprationevent"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/btn_default"
+                android:onClick="clickbuttonevent"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/btn_default"
+                android:text="5"
+                android:onClick="clickbuttonevent"
+                />
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/btn_default"
+                android:text="6"
+                android:onClick="clickbuttonevent"
+                />
+
+            <Button
+                android:id="@+id/btn_ne"
+                style="@style/btn_orange"
+                android:text="-"
+                android:onClick="oprationevent"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/btn_default"
+                android:text="1"
+                android:onClick="clickbuttonevent"
+                />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/btn_default"
+                android:text="2"
+                android:onClick="clickbuttonevent"
+                />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/btn_default"
+                android:text="3"
+                android:onClick="clickbuttonevent"
+                />
+
+            <Button
+                android:id="@+id/btn_pl"
+                style="@style/btn_orange"
+                android:text="+"
+                android:onClick="oprationevent"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_0"
+            style="@style/btn_zero_default"
+            android:text="0"
+            android:onClick="clickbuttonevent"
+            />
+
+        <Button
+            android:id="@+id/btn_dot"
+            style="@style/btn_default"
+            android:text="."
+            android:onClick="clickbuttonevent"
+            />
+
+        <Button
+            android:id="@+id/btn_OK"
+            style="@style/btn_orange"
+            android:text="="
+            android:onClick="equalevent"
+            />
+    </LinearLayout>
+</LinearLayout>
